@@ -1,0 +1,45 @@
+# Dependencies
+/node_modules
+/.pnpm-store
+
+# Next.js Build Output
+/.next/
+/out/
+
+# Production Build
+/build
+/dist
+
+# Environment Variables (Keep all sensitive tokens local)
+.env*.local
+.env
+!.env.example
+!.env.local.example
+
+# Debug and Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-debug.log*
+
+# Vercel & IDE
+.vercel
+.turbo
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# TypeScript Cache
+*.tsbuildinfo
+next-env.d.ts
+

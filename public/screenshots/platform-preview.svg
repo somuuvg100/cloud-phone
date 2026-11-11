@@ -1,0 +1,265 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d"/>
+      <stop offset="50%" stop-color="#0d1527"/>
+      <stop offset="100%" stop-color="#070a14"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#151e34"/>
+      <stop offset="100%" stop-color="#0e1626"/>
+    </linearGradient>
+    <linearGradient id="primaryGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="50%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="accentEmerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="accentAmber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .font-title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-weight: 800; }
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    .font-mono { font-family: "JetBrains Mono", "SF Mono", Consolas, monospace; }
+  </style>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="640" rx="24" fill="url(#bgGrad)"/>
+  <rect width="1198" height="638" x="1" y="1" rx="23" fill="none" stroke="#1e293b" stroke-width="1.5"/>
+
+  <!-- Decorative Glow Circles -->
+  <circle cx="200" cy="150" r="180" fill="#3b82f6" opacity="0.12" filter="url(#glow)"/>
+  <circle cx="1000" cy="450" r="220" fill="#6366f1" opacity="0.1" filter="url(#glow)"/>
+  <circle cx="650" cy="200" r="120" fill="#06b6d4" opacity="0.08" filter="url(#glow)"/>
+
+  <!-- Top Brand Navigation Bar -->
+  <rect x="40" y="35" width="1120" height="64" rx="16" fill="#131b2e" stroke="#1e293b" stroke-width="1"/>
+  
+  <!-- Logo Icon -->
+  <rect x="56" y="49" width="36" height="36" rx="10" fill="url(#primaryGlow)"/>
+  <path d="M74 57 C67 57 62 61.5 62 67 C62 70.2 64 73 67 74.8 L66 79 L71 76.5 C72 76.8 73 77 74 77 C81 77 86 72.5 86 67 C86 61.5 81 57 74 57 Z" fill="#ffffff"/>
+
+  <!-- Brand Title -->
+  <text x="104" y="73" fill="#ffffff" class="font-title" font-size="20">ReachOut</text>
+  <rect x="204" y="57" width="70" height="20" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="214" y="71" fill="#38bdf8" class="font-sans" font-size="10" font-weight="700">BLACKTEL</text>
+
+  <!-- Top Center Telemetry Status -->
+  <rect x="440" y="53" width="280" height="28" rx="8" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+  <circle cx="455" cy="67" r="4" fill="#10b981"/>
+  <text x="468" y="71" fill="#94a3b8" class="font-mono" font-size="11">Tier-1 Route • 99.8% SLA Active</text>
+
+  <!-- Right Pill: Credits Wallet -->
+  <rect x="990" y="51" width="150" height="32" rx="10" fill="#f59e0b" fill-opacity="0.15" stroke="#f59e0b" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="1005" y="72" fill="#fbbf24" class="font-title" font-size="14">⚡ 120</text>
+  <text x="1052" y="71" fill="#fef3c7" class="font-sans" font-size="11" font-weight="600">Credits Wallet</text>
+
+  <!-- 3-Column SaaS Showcase Layout -->
+
+  <!-- ================= COLUMN 1: VIRTUAL NUMBERS STORE ================= -->
+  <g transform="translate(40, 120)">
+    <rect width="350" height="480" rx="20" fill="url(#cardGrad)" stroke="#1e293b" stroke-width="1.5"/>
+    
+    <!-- Header -->
+    <rect x="20" y="20" width="36" height="36" rx="10" fill="#3b82f6" fill-opacity="0.15"/>
+    <text x="32" y="44" font-size="16">🌐</text>
+    <text x="68" y="36" fill="#ffffff" class="font-title" font-size="15">Virtual Numbers</text>
+    <text x="68" y="52" fill="#64748b" class="font-sans" font-size="11">Global SIM &amp; Landlines</text>
+
+    <!-- Number Card 1: US Mobile -->
+    <g transform="translate(20, 75)">
+      <rect width="310" height="85" rx="14" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="16" y="28" font-size="20">🇺🇸</text>
+      <text x="48" y="24" fill="#f8fafc" class="font-mono" font-size="13" font-weight="700">+1 (415) 890-2314</text>
+      <text x="48" y="40" fill="#64748b" class="font-sans" font-size="10">San Francisco • Mobile SIM</text>
+      <rect x="48" y="50" width="42" height="18" rx="5" fill="#1e293b"/><text x="54" y="63" fill="#38bdf8" class="font-mono" font-size="9">SMS</text>
+      <rect x="96" y="50" width="48" height="18" rx="5" fill="#1e293b"/><text x="102" y="63" fill="#38bdf8" class="font-mono" font-size="9">VOICE</text>
+      <rect x="150" y="50" width="40" height="18" rx="5" fill="#1e293b"/><text x="157" y="63" fill="#10b981" class="font-mono" font-size="9">OTP</text>
+      <text x="235" y="32" fill="#fbbf24" class="font-mono" font-size="12" font-weight="700">⚡ 12</text>
+      <text x="235" y="46" fill="#64748b" class="font-sans" font-size="9">/ month</text>
+      <rect x="228" y="54" width="68" height="20" rx="6" fill="#10b981" fill-opacity="0.15" stroke="#10b981" stroke-width="1"/>
+      <text x="240" y="68" fill="#34d399" class="font-sans" font-size="9" font-weight="700">ACTIVE</text>
+    </g>
+
+    <!-- Number Card 2: UK WhatsApp SIM -->
+    <g transform="translate(20, 175)">
+      <rect width="310" height="85" rx="14" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+      <text x="16" y="28" font-size="20">🇬🇧</text>
+      <text x="48" y="24" fill="#f8fafc" class="font-mono" font-size="13" font-weight="700">+44 7911 123456</text>
+      <text x="48" y="40" fill="#64748b" class="font-sans" font-size="10">London • WhatsApp SIM</text>
+      <rect x="48" y="50" width="42" height="18" rx="5" fill="#1e293b"/><text x="54" y="63" fill="#38bdf8" class="font-mono" font-size="9">SMS</text>
+      <rect x="96" y="50" width="76" height="18" rx="5" fill="#6366f1" fill-opacity="0.2"/><text x="102" y="63" fill="#818cf8" class="font-mono" font-size="9">WHATSAPP</text>
+      <text x="235" y="32" fill="#fbbf24" class="font-mono" font-size="12" font-weight="700">⚡ 16</text>
+      <text x="235" y="46" fill="#64748b" class="font-sans" font-size="9">/ month</text>
+      <rect x="228" y="54" width="68" height="20" rx="6" fill="#2563eb" fill-opacity="0.2" stroke="#3b82f6" stroke-width="1"/>
+      <text x="243" y="68" fill="#60a5fa" class="font-sans" font-size="9" font-weight="700">RENT</text>
+    </g>
+
+    <!-- Number Card 3: Germany Mobile -->
+    <g transform="translate(20, 275)">
+      <rect width="310" height="85" rx="14" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+      <text x="16" y="28" font-size="20">🇩🇪</text>
+      <text x="48" y="24" fill="#f8fafc" class="font-mono" font-size="13" font-weight="700">+49 1512 3456789</text>
+      <text x="48" y="40" fill="#64748b" class="font-sans" font-size="10">Berlin • Mobile SIM</text>
+      <rect x="48" y="50" width="42" height="18" rx="5" fill="#1e293b"/><text x="54" y="63" fill="#38bdf8" class="font-mono" font-size="9">SMS</text>
+      <rect x="96" y="50" width="48" height="18" rx="5" fill="#1e293b"/><text x="102" y="63" fill="#38bdf8" class="font-mono" font-size="9">VOICE</text>
+      <text x="235" y="32" fill="#fbbf24" class="font-mono" font-size="12" font-weight="700">⚡ 18</text>
+      <text x="235" y="46" fill="#64748b" class="font-sans" font-size="9">/ month</text>
+      <rect x="228" y="54" width="68" height="20" rx="6" fill="#2563eb" fill-opacity="0.2" stroke="#3b82f6" stroke-width="1"/>
+      <text x="243" y="68" fill="#60a5fa" class="font-sans" font-size="9" font-weight="700">RENT</text>
+    </g>
+
+    <!-- Auto-Forwarding Notice -->
+    <g transform="translate(20, 380)">
+      <rect width="310" height="75" rx="12" fill="#1e293b" fill-opacity="0.4" stroke="#334155" stroke-width="1"/>
+      <text x="16" y="24" fill="#38bdf8" class="font-sans" font-size="11" font-weight="700">⚡ Live Forwarding Engine</text>
+      <text x="16" y="42" fill="#94a3b8" class="font-sans" font-size="10">• SMS to Email Forwarding</text>
+      <text x="16" y="58" fill="#94a3b8" class="font-sans" font-size="10">• Real-Time Call Redirect to Handset</text>
+    </g>
+  </g>
+
+  <!-- ================= COLUMN 2: BROWSER WEBPHONE ================= -->
+  <g transform="translate(425, 120)">
+    <rect width="350" height="480" rx="20" fill="url(#cardGrad)" stroke="#1e293b" stroke-width="1.5"/>
+
+    <!-- Phone Chassis -->
+    <rect x="35" y="20" width="280" height="440" rx="28" fill="#0b1120" stroke="#334155" stroke-width="2"/>
+    
+    <!-- Top Speaker Notch -->
+    <rect x="145" y="32" width="60" height="4" rx="2" fill="#334155"/>
+    <circle cx="215" cy="34" r="3" fill="#334155"/>
+
+    <!-- Screen Display Area -->
+    <rect x="50" y="48" width="250" height="72" rx="14" fill="#020617" stroke="#1e293b" stroke-width="1"/>
+    <text x="65" y="68" fill="#10b981" class="font-sans" font-size="9" font-weight="700">● CONNECTED • 01:24</text>
+    <text x="65" y="92" fill="#ffffff" class="font-mono" font-size="16" font-weight="700">+1 (415) 555-0199</text>
+    <text x="65" y="108" fill="#64748b" class="font-sans" font-size="9">WebRTC HD Audio • 1 credit/min</text>
+
+    <!-- Keypad Matrix (12 keys) -->
+    <g transform="translate(50, 135)">
+      <!-- Row 1 -->
+      <rect x="5" y="5" width="70" height="42" rx="12" fill="#1e293b" stroke="#334155" stroke-width="0.8"/>
+      <text x="35" y="28" fill="#f8fafc" class="font-mono" font-size="16" font-weight="700" text-anchor="middle">1</text>
+      
+      <rect x="85" y="5" width="70" height="42" rx="12" fill="#1e293b" stroke="#334155" stroke-width="0.8"/>
+      <text x="120" y="26" fill="#f8fafc" class="font-mono" font-size="15" font-weight="700" text-anchor="middle">2</text>
+      <text x="120" y="38" fill="#64748b" class="font-sans" font-size="7" font-weight="700" text-anchor="middle">ABC</text>
+      
+      <rect x="165" y="5" width="70" height="42" rx="12" fill="#1e293b" stroke="#334155" stroke-width="0.8"/>
+      <text x="200" y="26" fill="#f8fafc" class="font-mono" font-size="15" font-weight="700" text-anchor="middle">3</text>
+      <text x="200" y="38" fill="#64748b" class="font-sans" font-size="7" font-weight="700" text-anchor="middle">DEF</text>
+
+      <!-- Row 2 -->
+      <rect x="5" y="55" width="70" height="42" rx="12" fill="#1e293b" stroke="#334155" stroke-width="0.8"/>
+      <text x="40" y="76" fill="#f8fafc" class="font-mono" font-size="15" font-weight="700" text-anchor="middle">4</text>
+      <text x="40" y="88" fill="#64748b" class="font-sans" font-size="7" font-weight="700" text-anchor="middle">GHI</text>
+
+      <rect x="85" y="55" width="70" height="42" rx="12" fill="#1e293b" stroke="#334155" stroke-width="0.8"/>
+      <text x="120" y="76" fill="#f8fafc" class="font-mono" font-size="15" font-weight="700" text-anchor="middle">5</text>
+      <text x="120" y="88" fill="#64748b" class="font-sans" font-size="7" font-weight="700" text-anchor="middle">JKL</text>
+
+      <rect x="165" y="55" width="70" height="42" rx="12" fill="#1e293b" stroke="#334155" stroke-width="0.8"/>
+      <text x="200" y="76" fill="#f8fafc" class="font-mono" font-size="15" font-weight="700" text-anchor="middle">6</text>
+      <text x="200" y="88" fill="#64748b" class="font-sans" font-size="7" font-weight="700" text-anchor="middle">MNO</text>
+
+      <!-- Row 3 -->
+      <rect x="5" y="105" width="70" height="42" rx="12" fill="#1e293b" stroke="#334155" stroke-width="0.8"/>
+      <text x="40" y="126" fill="#f8fafc" class="font-mono" font-size="15" font-weight="700" text-anchor="middle">7</text>
+      <text x="40" y="138" fill="#64748b" class="font-sans" font-size="7" font-weight="700" text-anchor="middle">PQRS</text>
+
+      <rect x="85" y="105" width="70" height="42" rx="12" fill="#1e293b" stroke="#334155" stroke-width="0.8"/>
+      <text x="120" y="126" fill="#f8fafc" class="font-mono" font-size="15" font-weight="700" text-anchor="middle">8</text>
+      <text x="120" y="138" fill="#64748b" class="font-sans" font-size="7" font-weight="700" text-anchor="middle">TUV</text>
+
+      <rect x="165" y="105" width="70" height="42" rx="12" fill="#1e293b" stroke="#334155" stroke-width="0.8"/>
+      <text x="200" y="126" fill="#f8fafc" class="font-mono" font-size="15" font-weight="700" text-anchor="middle">9</text>
+      <text x="200" y="138" fill="#64748b" class="font-sans" font-size="7" font-weight="700" text-anchor="middle">WXYZ</text>
+
+      <!-- Row 4 -->
+      <rect x="5" y="155" width="70" height="42" rx="12" fill="#1e293b" stroke="#334155" stroke-width="0.8"/>
+      <text x="40" y="180" fill="#f8fafc" class="font-mono" font-size="17" font-weight="700" text-anchor="middle">*</text>
+
+      <rect x="85" y="155" width="70" height="42" rx="12" fill="#1e293b" stroke="#334155" stroke-width="0.8"/>
+      <text x="120" y="176" fill="#f8fafc" class="font-mono" font-size="15" font-weight="700" text-anchor="middle">0</text>
+      <text x="120" y="188" fill="#64748b" class="font-sans" font-size="8" font-weight="700" text-anchor="middle">+</text>
+
+      <rect x="165" y="155" width="70" height="42" rx="12" fill="#1e293b" stroke="#334155" stroke-width="0.8"/>
+      <text x="200" y="180" fill="#f8fafc" class="font-mono" font-size="16" font-weight="700" text-anchor="middle">#</text>
+    </g>
+
+    <!-- Call / Hangup Buttons -->
+    <circle cx="175" cy="395" r="26" fill="#ef4444" filter="url(#glow)"/>
+    <!-- Phone Hangup Icon -->
+    <path d="M165 397 Q175 388 185 397 L182 403 Q175 398 168 403 Z" fill="#ffffff"/>
+  </g>
+
+  <!-- ================= COLUMN 3: 2-WAY CHAT & OTP INBOX ================= -->
+  <g transform="translate(810, 120)">
+    <rect width="350" height="480" rx="20" fill="url(#cardGrad)" stroke="#1e293b" stroke-width="1.5"/>
+
+    <!-- Header -->
+    <rect x="20" y="20" width="36" height="36" rx="10" fill="#10b981" fill-opacity="0.15"/>
+    <text x="32" y="44" font-size="16">💬</text>
+    <text x="68" y="36" fill="#ffffff" class="font-title" font-size="15">2-Way Chat &amp; OTPs</text>
+    <text x="68" y="52" fill="#64748b" class="font-sans" font-size="11">Real-Time Inbound Verification</text>
+
+    <!-- Chat Bubble 1: Incoming WhatsApp OTP -->
+    <g transform="translate(20, 75)">
+      <rect width="280" height="110" rx="14" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="16" y="22" fill="#10b981" class="font-sans" font-size="11" font-weight="700">WhatsApp Business</text>
+      <text x="210" y="22" fill="#64748b" class="font-mono" font-size="9">Just now</text>
+
+      <!-- OTP Box -->
+      <rect x="16" y="32" width="248" height="34" rx="8" fill="#f59e0b" fill-opacity="0.12" stroke="#f59e0b" stroke-opacity="0.3" stroke-width="1"/>
+      <text x="28" y="54" fill="#fbbf24" class="font-mono" font-size="14" font-weight="700">492-810</text>
+      <rect x="180" y="38" width="76" height="22" rx="6" fill="#f59e0b"/>
+      <text x="190" y="53" fill="#ffffff" class="font-sans" font-size="9" font-weight="700">COPY OTP</text>
+
+      <text x="16" y="84" fill="#cbd5e1" class="font-sans" font-size="10">Your verification code is 492-810.</text>
+      <text x="16" y="98" fill="#64748b" class="font-sans" font-size="9">Do not share this code with anyone.</text>
+    </g>
+
+    <!-- Chat Bubble 2: Google Verification -->
+    <g transform="translate(20, 200)">
+      <rect width="280" height="95" rx="14" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+      <text x="16" y="22" fill="#38bdf8" class="font-sans" font-size="11" font-weight="700">Google 2FA</text>
+      <text x="215" y="22" fill="#64748b" class="font-mono" font-size="9">5m ago</text>
+
+      <rect x="16" y="32" width="248" height="34" rx="8" fill="#38bdf8" fill-opacity="0.12" stroke="#38bdf8" stroke-opacity="0.3" stroke-width="1"/>
+      <text x="28" y="54" fill="#38bdf8" class="font-mono" font-size="14" font-weight="700">G-984217</text>
+      <rect x="180" y="38" width="76" height="22" rx="6" fill="#0284c7"/>
+      <text x="190" y="53" fill="#ffffff" class="font-sans" font-size="9" font-weight="700">COPY OTP</text>
+
+      <text x="16" y="82" fill="#cbd5e1" class="font-sans" font-size="10">G-984217 is your Google login code.</text>
+    </g>
+
+    <!-- Chat Bubble 3: Outbound Reply -->
+    <g transform="translate(50, 310)">
+      <rect width="250" height="60" rx="14" fill="#2563eb" fill-opacity="0.3" stroke="#3b82f6" stroke-width="1"/>
+      <text x="16" y="24" fill="#93c5fd" class="font-sans" font-size="10" font-weight="700">You (Outbound Line)</text>
+      <text x="16" y="42" fill="#f8fafc" class="font-sans" font-size="10">Hello! We have verified your line.</text>
+    </g>
+
+    <!-- Compose Reply Bar -->
+    <g transform="translate(20, 390)">
+      <rect width="310" height="48" rx="12" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="16" y="28" fill="#64748b" class="font-sans" font-size="11">Type response... (1 credit)</text>
+      <circle cx="285" cy="24" r="16" fill="#3b82f6"/>
+      <!-- Arrow Icon -->
+      <path d="M280 24 L288 20 L288 28 Z" fill="#ffffff"/>
+    </g>
+  </g>
+</svg>
+
